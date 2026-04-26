@@ -23,10 +23,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -36,18 +32,10 @@ jobs:
           curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.40/mdbook-v0.4.40-x86_64-unknown-linux-gnu.tar.gz | tar -xz
           sudo mv mdbook /usr/local/bin/
 
-      - run: npm ci
-
       - name: Regenerate book/src/ from OUTPUT.md
         run: python3 split_book.py
 
-      # If you don't want password protection, replace this step with:
-      #   - run: npm run build
-      # and remove the BOOK_PASSWORD secret.
-      - name: Build and encrypt
-        env:
-          BOOK_PASSWORD: ${{ secrets.BOOK_PASSWORD }}
-        run: npm run build:encrypted
+      - run: cd book && mdbook build
 
       - uses: actions/upload-pages-artifact@v3
         with:

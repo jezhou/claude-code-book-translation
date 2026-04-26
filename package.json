@@ -1,15 +1,9 @@
 {
   "name": "{{REPO_NAME}}",
   "version": "0.1.0",
-  "description": "{{ONE_LINE_DESCRIPTION}}",
   "type": "module",
   "scripts": {
-    "build": "cd book && mdbook build",
-    "encrypt": "node encrypt-site.js",
-    "build:encrypted": "npm run build && npm run encrypt"
+    "build": "cd book && mdbook build"
   },
-  "license": "{{LICENSE}}",
-  "devDependencies": {
-    "pagecrypt": "7.0.2"
-  }
+  "license": "{{LICENSE}}"
 }
