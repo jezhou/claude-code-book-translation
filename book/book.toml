@@ -1,0 +1,13 @@
+[book]
+title = "{{BOOK_TITLE}}"
+authors = ["{{AUTHOR}}", "translated by: {{TRANSLATOR}}"]
+description = "{{BOOK_DESCRIPTION}}"
+language = "{{TARGET_LANGUAGE_CODE}}"
+src = "src"
+
+[build]
+build-dir = "../output/site"
+
+[output.html]
+git-repository-url = "{{REPO_URL}}"
+no-section-label = true
