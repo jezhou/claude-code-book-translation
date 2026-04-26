@@ -1,8 +1,8 @@
 [book]
-title = "{{BOOK_TITLE}}"
-authors = ["{{AUTHOR}}", "translated by: {{TRANSLATOR}}"]
-description = "{{BOOK_DESCRIPTION}}"
-language = "{{TARGET_LANGUAGE_CODE}}"
+title = "The Complete Works of Wang Yangming"
+authors = ["Wang Yangming (王守仁)", "translated by: Claude Code"]
+description = "An English translation of 王陽明全集, the four-volume collected works of the Ming-dynasty Neo-Confucian philosopher Wang Yangming (Wang Shouren, 1472–1529), founder of the School of Mind (心學). Includes the Chuanxi lu (Instructions for Practical Living), official correspondence, literary writings, and biographical materials."
+language = "en"
 src = "src"
 
 [build]

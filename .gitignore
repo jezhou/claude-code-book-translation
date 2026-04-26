@@ -3,3 +3,4 @@ output/
 book/book/
 .DS_Store
 *.log
+.claude/settings.local.json

@@ -4,7 +4,7 @@ Guidance for Claude Code on this repository.
 
 ## Project
 
-Translating from **{{SOURCE_LANGUAGE}}** to **{{TARGET_LANGUAGE}}** for **{{TARGET_AUDIENCE}}**. Book metadata (title, author, translator, language code) lives in `book/book.toml`.
+Translating from **Chinese** to **American English** for **American readers interested in philosophy**. Book metadata (title, author, translator, language code) lives in `book/book.toml`.
 
 ## How to work this project
 
